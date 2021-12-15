@@ -1,5 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined, Info } from "@material-ui/icons"
 import styled from "styled-components"
+import { sliderItems } from "../data";
+import { useState } from "react";
 
 const Container = styled.div`
     width: 100%;
@@ -25,11 +27,13 @@ const Arrow = styled.div`
     margin: auto;
     cursor: pointer;
     opacity: 0.5;
+    z-index: 2;
 `;
 
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
+    transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -71,44 +75,36 @@ const Button = styled.button`
 `
 
 const Slider = () => {
+    const [slideIndex, setSlideIndex] = useState(0)
+    const handleClick = (direction) => {
+
+        if(direction === 'left') {
+            setSlideIndex(slideIndex > 0 ? slideIndex-1 : 2)
+        } else {
+            setSlideIndex(slideIndex < 2 ? slideIndex+1 : 0)
+        }
+    }
+
     return (
         <Container>
-            <Arrow direction='left'>
+            <Arrow direction='left' onClick={handleClick}>
                 <ArrowLeftOutlined />
             </Arrow>
-            <Wrapper>
-                <Slide bg='f5fafd'>
+            <Wrapper slideIndex={slideIndex}>
+                {sliderItems.map((item=> (
+            <Slide bg={item.bg}>
                 <ImgContainer>
-                    <Image src='https://i.pinimg.com/originals/dc/44/a5/dc44a5e2e787a5e4c1f2354df2d9122e.jpg'/>
+                    <Image src={item.img}/>
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>Summer Sale</Title>
-                    <Desc>Sick Clothes, Sick Memes</Desc>
+                    <Title>{item.title}</Title>
+                    <Desc>{item.desc}</Desc>
                     <Button>SHOP NOW</Button>
                 </InfoContainer>
                 </Slide>
-                <Slide bg='fcf1ed'>
-                <ImgContainer>
-                    <Image src='https://i.pinimg.com/originals/dc/44/a5/dc44a5e2e787a5e4c1f2354df2d9122e.jpg'/>
-                </ImgContainer>
-                <InfoContainer>
-                    <Title>Winter Sale</Title>
-                    <Desc>Sick Clothes, Sick Memes</Desc>
-                    <Button>SHOP NOW</Button>
-                </InfoContainer>
-                </Slide>
-                <Slide bg='fbfof4'>
-                <ImgContainer>
-                    <Image src='https://i.pinimg.com/originals/dc/44/a5/dc44a5e2e787a5e4c1f2354df2d9122e.jpg'/>
-                </ImgContainer>
-                <InfoContainer>
-                    <Title>Spring Sale</Title>
-                    <Desc>Sick Clothes, Sick Memes</Desc>
-                    <Button>SHOP NOW</Button>
-                </InfoContainer>
-                </Slide>
+             )))}
             </Wrapper>
-            <Arrow direction='right'>
+            <Arrow direction='right' onClick={handleClick}>
                 <ArrowRightOutlined />
             </Arrow>
         </Container>
