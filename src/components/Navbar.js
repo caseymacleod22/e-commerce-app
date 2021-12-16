@@ -71,7 +71,7 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>shop stop</Logo>
+                    <Logo>macleod dev</Logo>
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>
