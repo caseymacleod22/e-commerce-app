@@ -33,6 +33,13 @@ const Price = styled.span`
     font-size: 40px;
 `
 
+const FilterContainer = styled.div``
+const Filter = styled.div``
+const FilterTitle = styled.div``
+const FilterColor = styled.div``
+const FilterSize = styled.div``
+const FilterSizeOption = styled.div``
+
 const Product = () => {
     return (
         <Container>
@@ -46,6 +53,25 @@ const Product = () => {
                     <Title>Denim Jumpsuit</Title>
                     <Desc>Me and Mark Routzou</Desc>
                     <Price>$25</Price>
+                    <FilterContainer>
+                        <Filter>
+                            <FilterTitle>Color</FilterTitle>
+                            <FilterColor color='black'/>
+                            <FilterColor color='dark blue'/>
+                            <FilterColor color='gray'/>
+                        </Filter>
+                        <Filter>
+                            <FilterTitle>Size</FilterTitle>
+                            <FilterSize>
+                                <FilterSizeOption>XS</FilterSizeOption>
+                                <FilterSizeOption>S</FilterSizeOption>
+                                <FilterSizeOption>M</FilterSizeOption>
+                                <FilterSizeOption>L</FilterSizeOption>
+                                <FilterSizeOption>XL</FilterSizeOption>
+                                <FilterSizeOption>XXL</FilterSizeOption>
+                            </FilterSize>
+                        </Filter>
+                    </FilterContainer>
                 </InfoContainer>
             </Wrapper>
             <Newsletter />
