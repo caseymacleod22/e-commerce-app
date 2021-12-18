@@ -84,9 +84,9 @@ const PriceDetail = styled.div`
 `
 
 const ProductAmountContainer = styled.div`
-    display: flex;
+    /* display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 `
 const ProductAmount = styled.div`
     font-size: 24px;
