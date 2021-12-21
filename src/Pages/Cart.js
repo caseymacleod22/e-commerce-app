@@ -89,9 +89,9 @@ const ProductAmountContainer = styled.div`
     margin-bottom: 20px;
 `
 const ProductAmount = styled.div`
-    /* font-size: 24px;
+    font-size: 24px;
     margin: 5px;
-    ${mobile({margin: '5px 15px'})} */
+    ${mobile({margin: '5px 15px'})}
 `
 const ProductPrice = styled.div`
     font-size: 30px;
