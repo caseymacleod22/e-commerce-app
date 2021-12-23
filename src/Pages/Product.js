@@ -82,9 +82,9 @@ const AddContainer = styled.div`
     ${mobile({width: '100%'})}
 `
 const AmountContainer = styled.div`
-    display: flex;
+    /* display: flex;
     align-items: center;
-    font-weight: 700;
+    font-weight: 700; */
 `
 const Amount = styled.span`
     width: 30px;
