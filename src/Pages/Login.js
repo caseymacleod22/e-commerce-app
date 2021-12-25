@@ -14,10 +14,10 @@ const Container = styled.div`
     justify-content: center;
 `
 const Wrapper = styled.div`
-    /* padding: 20px;
+    padding: 20px;
     width: 25%;
     background-color: white;
-    ${mobile({width: '75%'})} */
+    ${mobile({width: '75%'})}
 `
 const Title = styled.h1`
     font-size: 24px;
