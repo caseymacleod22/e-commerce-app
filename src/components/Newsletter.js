@@ -16,10 +16,10 @@ const Title = styled.h1`
     margin-bottom: 20px; 
 `
 const Desc = styled.div`
-    font-size: 24px;
+    /* font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
-    ${mobile({textAlign: 'center'})}
+    ${mobile({textAlign: 'center'})} */
 `
 const InputContainer = styled.div`
     width: 50%;
