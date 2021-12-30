@@ -100,9 +100,9 @@ const ProductPrice = styled.div`
 `
 
 const Hr = styled.hr`
-    /* background-color: #eee;
+    background-color: #eee;
     border: none;
-    height: 1px; */
+    height: 1px;
 `
 
 const Summary= styled.div`
