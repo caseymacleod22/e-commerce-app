@@ -48,8 +48,8 @@ const Slide = styled.div`
 `;
 
 const ImgContainer = styled.div`
-    flex: 1;
-    height: 100%;
+    /* flex: 1;
+    height: 100%; */
 `;
 
 const Image = styled.img`
