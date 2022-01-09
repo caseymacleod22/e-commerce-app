@@ -94,9 +94,9 @@ const ProductAmount = styled.div`
     ${mobile({margin: '5px 15px'})}
 `
 const ProductPrice = styled.div`
-    /* font-size: 30px;
+    font-size: 30px;
     font-weight: 200;
-    ${mobile({marginBottom: '20px'})} */
+    ${mobile({marginBottom: '20px'})}
 `
 
 const Hr = styled.hr`
