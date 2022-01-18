@@ -58,8 +58,8 @@ const Icon = styled.div`
     transition:all 0.5s ease;
 
 &:hover {
-        background-color: rgb(196, 190, 262);
-        transform: scale(1.1);
+        /* background-color: rgb(196, 190, 262);
+        transform: scale(1.1); */
     }
 
 `
