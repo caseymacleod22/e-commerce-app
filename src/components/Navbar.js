@@ -10,11 +10,11 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    ${mobile({ padding: '10px 0px' })}
+    ${mobile({ padding: '10px 0px' })} */
 `;
 
 const Left = styled.div`
