@@ -52,8 +52,8 @@ const Filter = styled.div`
 `
 
 const FilterTitle = styled.span`
-    /* font-size: 20px;
-    font-weight: 200; */
+    font-size: 20px;
+    font-weight: 200;
 `
 
 const FilterColor = styled.div`
