@@ -66,8 +66,8 @@ const FilterColor = styled.div`
 `
 
 const FilterSize = styled.select`
-    /* margin-left: 10px;
-    padding: 5px; */
+    margin-left: 10px;
+    padding: 5px;
 `
 
 const FilterSizeOption = styled.option`
