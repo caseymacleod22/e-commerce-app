@@ -3,8 +3,8 @@ import styled from "styled-components"
 import { mobile } from "../Responsive"
 
 const Container = styled.div`
-    display: flex;
-    ${mobile({flexDirection: 'column'})}
+    /* display: flex;
+    ${mobile({flexDirection: 'column'})} */
 `
 const Left = styled.div`
     flex: 1;
