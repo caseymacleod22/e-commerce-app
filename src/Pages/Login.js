@@ -24,8 +24,8 @@ const Title = styled.h1`
     font-weight: 300;
 `
 const Form = styled.form`
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 `
 const Input = styled.input`
     flex: 1;
